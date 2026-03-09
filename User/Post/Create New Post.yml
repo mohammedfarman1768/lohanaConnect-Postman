@@ -1,0 +1,36 @@
+info:
+  name: Create New Post
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/user/posts
+  body:
+    type: multipart-form
+    data:
+      - name: "content "
+        type: text
+        value: '"Hello world! Check out this video #coding"'
+      - name: visibility
+        type: text
+        value: PUBLIC
+      - name: tags
+        type: text
+        value: javascript,nodejs,webdev
+      - name: mentions
+        type: text
+        value: 69a84d6b015ea39651059db4
+      - name: media
+        type: file
+        value:
+          - C:\Users\farma\Downloads\download.jpeg
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDQzNjI4LCJleHAiOjE3NzMwNDQ1Mjh9.Bwiw3kxR3kNg0JjfHqeqH1g1vifU0pOR19uGP90kPHk
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

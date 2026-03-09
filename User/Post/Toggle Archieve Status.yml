@@ -1,0 +1,17 @@
+info:
+  name: Toggle Archieve Status
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://localhost:5000/api/v1/user/posts/69ae71d0e24220d31ddedac0/archive
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDQxNTU2LCJleHAiOjE3NzMwNDI0NTZ9.q5dKTt71PT3RwmLAC3T25d-0vdD3I1yARYYxhVgDC84
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

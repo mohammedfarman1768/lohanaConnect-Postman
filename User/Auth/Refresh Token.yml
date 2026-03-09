@@ -1,0 +1,17 @@
+info:
+  name: Refresh Token
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/user/auth/refresh-token
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDM1NzAyLCJleHAiOjE3NzMwMzY2MDJ9.Td7u34QsEOQT3eU37pdcQkWlv4cEulYOAr2r9X9k9ns.bwP3KdJvCEfNUJhWJQOAhjrVGLqi-5h8qS7k9bdHiXo
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

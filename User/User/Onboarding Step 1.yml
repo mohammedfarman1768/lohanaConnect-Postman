@@ -1,0 +1,48 @@
+info:
+  name: Onboarding Step 1
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/user/user/onboarding/step-1
+  body:
+    type: multipart-form
+    data:
+      - name: profileImage
+        type: file
+        value:
+          - C:\Users\farma\Downloads\download.jpeg
+      - name: dob
+        type: text
+        value: 1998-05-15
+      - name: country
+        type: text
+        value: India
+      - name: state
+        type: text
+        value: Delhi
+      - name: city
+        type: text
+        value: New Delhi
+      - name: zipcode
+        type: text
+        value: "110001"
+      - name: gender
+        type: text
+        value: MALE
+      - name: bloodGroup
+        type: text
+        value: B+
+      - name: socialLinks
+        type: text
+        value: '{"facebook": "fb.com/user", "linkedin": "li.com/user"}'
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDM3NTAyLCJleHAiOjE3NzMwMzg0MDJ9.auTY9PxbhtLvtXGOJJOciOH_jdtaQS-egNYHSJmZcNw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

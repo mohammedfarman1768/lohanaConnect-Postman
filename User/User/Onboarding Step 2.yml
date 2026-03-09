@@ -1,0 +1,40 @@
+info:
+  name: Onboarding Step 2
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/user/user/onboarding/step-2
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fatherName\": \"John Doe Sr.\",\r
+
+      \  \"motherName\": \"Jane Doe\",\r
+
+      \  \"maternalGrandfatherName\": \"Robert Smith\",\r
+
+      \  \"paternalGrandfatherName\": \"William Doe\",\r
+
+      \  \"motherMaidenName\": \"Smith\",\r
+
+      \  \"nativePlace\": \"New York\",\r
+
+      \  \"gotra\": \"Kashyap\",\r
+
+      \  \"maritalStatus\": \"Married\",\r
+
+      \  \"spouseName\": \"Sarah Doe\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDM3NzE0LCJleHAiOjE3NzMwMzg2MTR9.ilS1PzG6SN1Izg3ycqK8NyBMOxHnuJNYjDWt3XH_GGM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

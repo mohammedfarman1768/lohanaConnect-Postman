@@ -1,0 +1,48 @@
+info:
+  name: Onboarding Step 3
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/user/user/onboarding/step-3
+  body:
+    type: json
+    data: "{\r
+
+      \  \"highestQualification\": \"Postgraduate\",\r
+
+      \  \"lastInstitutionName\": \"MIT\",\r
+
+      \  \"yearOfGraduation\": \"2020\",\r
+
+      \  \"courseAndSpecialization\": \"MBA\",\r
+
+      \  \"organizationName\": \"Acme Corp\",\r
+
+      \  \"designation\": \"Product Manager\",\r
+
+      \  \"officeContact\": \"+1-555-0198\",\r
+
+      \  \"occupationType\": \"Employed\",\r
+
+      \  \"officeLocation\": \"New York, NY\",\r
+
+      \  \"networkingOpportunities\": [\r
+
+      \    \"Mentorship\",\r
+
+      \    \"Investor connections\"\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDM3NzE0LCJleHAiOjE3NzMwMzg2MTR9.ilS1PzG6SN1Izg3ycqK8NyBMOxHnuJNYjDWt3XH_GGM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

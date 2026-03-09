@@ -1,0 +1,17 @@
+info:
+  name: Resend OTP For Email Update
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/user/auth/email/resend
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFhNWQxNjVlOTdkMmI4MjBhNTJjYzIiLCJyb2xlIjoiTUVNQkVSIiwiaWF0IjoxNzcyNzcyODEwLCJleHAiOjE3NzI3NzM3MTB9.Ofm39kAvCN3qammN6LDB1cNd_0P2ZdaAwGhLWP8JeeE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

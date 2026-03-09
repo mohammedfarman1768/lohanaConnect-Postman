@@ -1,0 +1,32 @@
+info:
+  name: Update Profile
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/v1/user/user/profile
+  body:
+    type: json
+    data: "{\r
+
+      \  \"socialLinks\": {\r
+
+      \    \"linkedin\": \"https://linkedin.com/in/updated-profile\",\r
+
+      \    \"twitter\": \"https://linkedin.com/in/updated-profile\"\r
+
+      \  },\r
+
+      \  \"networkingOpportunities\": [\"Job Referrals\", \"Public Speaking\"]\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDM3NzE0LCJleHAiOjE3NzMwMzg2MTR9.ilS1PzG6SN1Izg3ycqK8NyBMOxHnuJNYjDWt3XH_GGM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

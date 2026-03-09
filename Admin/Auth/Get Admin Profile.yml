@@ -1,0 +1,17 @@
+info:
+  name: Get Admin Profile
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: http://localhost:5000/api/v1/admin/auth/profile
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWE5NzBjNzE4ODBjYTAxNDNkZDYyNzUiLCJyb2xlIjoiU1VQRVItQURNSU4iLCJpYXQiOjE3NzI3MjAwNDIsImV4cCI6MTc3MjcyMDk0Mn0.dSMsDL48Ksn1sozZE584OvRe0hUAJ0u_6CwWOg3yQa4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

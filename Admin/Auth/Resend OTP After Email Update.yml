@@ -1,0 +1,17 @@
+info:
+  name: Resend OTP After Email Update
+  type: http
+  seq: 17
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/admin/auth/email/resend-otp
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWE5OTE2NzJhNzg4YmE4YzliZjc1M2UiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzI3MjExNzEsImV4cCI6MTc3MjcyMjA3MX0.XCQRb1kAgqOMz8euArRcVEslPrbm-QnsvmaR7uLumpQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

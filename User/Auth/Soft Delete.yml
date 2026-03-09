@@ -1,0 +1,17 @@
+info:
+  name: Soft Delete
+  type: http
+  seq: 16
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/user/auth/account
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFhNWQxNjVlOTdkMmI4MjBhNTJjYzIiLCJyb2xlIjoiTUVNQkVSIiwiaWF0IjoxNzcyNzczMjUwLCJleHAiOjE3NzI3NzQxNTB9.U5WqtoOktD2m6jxjWzAvEexuV-z5jSMDlmwhO4ZpXVE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

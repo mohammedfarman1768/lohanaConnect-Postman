@@ -1,0 +1,20 @@
+info:
+  name: Admin Login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/admin/auth/login
+  body:
+    type: json
+    data: '{ "email": "farmankhan1768@gmail.com", "password": "Farman12@" }'
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWE4NjM5MWE0NGRiN2E0OWUyN2Q4MDciLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzI2NDM4MDUsImV4cCI6MTc3MjY0NDcwNX0.E_8aiwfx-qHxZ36gFO2eK7snbMAFBr0OTdNw2LBNi04
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

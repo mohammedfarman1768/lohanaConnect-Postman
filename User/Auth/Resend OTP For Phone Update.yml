@@ -1,0 +1,17 @@
+info:
+  name: Resend OTP For Phone Update
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/user/auth/phone/resend
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFyYTIwMjZAZ21haWwuY29tIiwiaXNFbWFpbFZlcmlmaWVkIjp0cnVlLCJpc1Bob25lVmVyaWZpZWQiOnRydWUsImlhdCI6MTc3MzAzNjEzMCwiZXhwIjoxNzczMDM3MDMwfQ.keL9nGzGbfKn7jG28uAX9Pa1EnNABO_DcQh9tJYTOGE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

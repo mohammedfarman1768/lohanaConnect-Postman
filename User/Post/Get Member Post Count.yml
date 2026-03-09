@@ -1,0 +1,17 @@
+info:
+  name: Get Member Post Count
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: http://localhost:5000/api/v1/user/posts/member/69ae5e3c87a1f845828ba550/count
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDQyOTc3LCJleHAiOjE3NzMwNDM4Nzd9.AdvMvjFn2bVITFCYiH9ZrUZA2TpKyMapBZ3ZAOkajgE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

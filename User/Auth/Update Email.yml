@@ -1,0 +1,23 @@
+info:
+  name: Update Email
+  type: http
+  seq: 13
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/v1/user/auth/email
+  body:
+    type: json
+    data: |-
+      {
+        "email": "rtsfarman2026@gmail.com"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFyYTIwMjZAZ21haWwuY29tIiwiaXNFbWFpbFZlcmlmaWVkIjp0cnVlLCJpc1Bob25lVmVyaWZpZWQiOnRydWUsImlhdCI6MTc3MzAzNjk0MywiZXhwIjoxNzczMDM3ODQzfQ.p-1owMDaEtyHtQe_9AZ7Iq2s3FfQayh7PmGtZMCnl-E
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

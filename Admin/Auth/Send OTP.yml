@@ -1,0 +1,18 @@
+info:
+  name: Send OTP
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/admin/auth/setup/send-otp
+  body:
+    type: json
+    data: "{ \"identifier\": \"merabacha254@gmail.com\", \"type\": \"EMAIL\" }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

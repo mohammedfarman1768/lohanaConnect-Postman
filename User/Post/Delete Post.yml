@@ -1,0 +1,17 @@
+info:
+  name: Delete Post
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/user/posts/69ae71d0e24220d31ddedac0
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDQzMTcxLCJleHAiOjE3NzMwNDQwNzF9.RbWNXY8e83VlnWjQOAZDG7Tbst3yE4TawHBdyiazqp8
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

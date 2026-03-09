@@ -1,0 +1,21 @@
+info:
+  name: Restore User
+  type: http
+  seq: 13
+
+http:
+  method: PATCH
+  url: http://localhost:5000/api/v1/admin/users/:id/restore
+  params:
+    - name: id
+      value: 69a9aace725387850085adb5
+      type: path
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWE5YTU3OTMxZjA2MDRhN2RlMWI5ZDEiLCJyb2xlIjoiU1VQRVItQURNSU4iLCJpYXQiOjE3NzI3Mjc5MjUsImV4cCI6MTc3MjcyODgyNX0.ouupp-2_Ho02ZAzx2j1-vg__if4lIW1gwbuOmcJoN1g
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

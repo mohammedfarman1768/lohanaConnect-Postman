@@ -1,0 +1,20 @@
+info:
+  name: Verfiy Phone After Update
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/admin/auth/phone/verify
+  body:
+    type: json
+    data: "{\r\n    \"otp\": \"876568\"\r\n}"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWE5OTE2NzJhNzg4YmE4YzliZjc1M2UiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzI3MjA5MDYsImV4cCI6MTc3MjcyMTgwNn0.vVouGa-HoM67y-GfQg_pc3TZjRw3Bf4pA4Fvd6_8jr0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

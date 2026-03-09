@@ -1,0 +1,21 @@
+info:
+  name: Get Verification History
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://localhost:5000/api/v1/admin/users/:id/verification-history
+  params:
+    - name: id
+      value: 69a9aace725387850085adb5
+      type: path
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWE5YTU3OTMxZjA2MDRhN2RlMWI5ZDEiLCJyb2xlIjoiU1VQRVItQURNSU4iLCJpYXQiOjE3NzI3MjczNzcsImV4cCI6MTc3MjcyODI3N30.Qpy6qOt9tPqY8i7xDBdoA-GuaEXxI6ulSm7LryOVz08
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

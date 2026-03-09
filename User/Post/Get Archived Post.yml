@@ -1,0 +1,17 @@
+info:
+  name: Get Archived Post
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:5000/api/v1/user/posts/me/archived
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDQxMDYwLCJleHAiOjE3NzMwNDE5NjB9.6TifRtOke7SMMXQZVlpLAv5gR_2UotsHrobujIum3kg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: Activate Admin
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/admin/auth/setup/activate
+  body:
+    type: json
+    data: "{\r
+
+      \  \"email\": \"rtsfarman2026@gmail.com\",\r
+
+      \  \"phone\": \"+918306529039\",\r
+
+      \  \"newPassword\": \"Farman12@\"\r
+
+      }\r\n"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWE4MjgwMTk1ZjE4YTUzYjI0OTFjOWIiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzI2MzU5NzUsImV4cCI6MTc3MjYzNjg3NX0.jpUX6BaovYfCmtlOWmlyFZJATgIiCrn1AU10MP30y4c
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

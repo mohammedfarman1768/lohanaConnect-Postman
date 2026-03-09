@@ -1,0 +1,9 @@
+info:
+  name: Post
+  type: folder
+  seq: 1
+
+request:
+  auth:
+    type: bearer
+    token: '"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDM5NDU5LCJleHAiOjE3NzMwNDAzNTl9.cPAF9-mv1DM17Q7sa4Hn-dJIPS0cW59SNXVLEYwBQWs'

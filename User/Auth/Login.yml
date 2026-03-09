@@ -1,0 +1,24 @@
+info:
+  name: Login
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/user/auth/login
+  body:
+    type: json
+    data: |-
+      {
+        "email": "rtsfarman2026@gmail.com",
+        "password": "Farman12@"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWE5MTllNmYyZWNmNjQzMmEzZTkwMWIiLCJyb2xlIjoiTUVNQkVSIiwiaWF0IjoxNzcyNjkwMTY1LCJleHAiOjE3NzI2OTEwNjV9.YANXLWoEiho_tmgG9ryY1bOmAOnsXYfTu_pY_T7SeeY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
