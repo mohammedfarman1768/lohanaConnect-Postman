@@ -8,30 +8,24 @@ http:
   url: http://localhost:5000/api/v1/user/user/onboarding/step-2
   body:
     type: json
-    data: "{\r
-
-      \  \"fatherName\": \"John Doe Sr.\",\r
-
-      \  \"motherName\": \"Jane Doe\",\r
-
-      \  \"maternalGrandfatherName\": \"Robert Smith\",\r
-
-      \  \"paternalGrandfatherName\": \"William Doe\",\r
-
-      \  \"motherMaidenName\": \"Smith\",\r
-
-      \  \"nativePlace\": \"New York\",\r
-
-      \  \"gotra\": \"Kashyap\",\r
-
-      \  \"maritalStatus\": \"Married\",\r
-
-      \  \"spouseName\": \"Sarah Doe\"\r
-
-      }"
+    data: |-
+      {
+        "highestQualification": "Postgraduate",
+        "lastInstitutionName": "IIT Delhi",
+        "yearOfGraduation": 2020,
+        "courseAndSpecialization": "Computer Science",
+        "occupationType": "Business",
+        "organizationName": "Lohana Pvt Ltd",
+        "designation": "Director",
+        "officeLocation": "New Delhi",
+        "officeContact": "+919876543210",
+        "networkingOpportunities": ["Business", "Investment"],
+        "connectMeFor": "Business",
+        "action": "complete"
+      }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDM3NzE0LCJleHAiOjE3NzMwMzg2MTR9.ilS1PzG6SN1Izg3ycqK8NyBMOxHnuJNYjDWt3XH_GGM
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMjMzMDYwLCJleHAiOjE3NzMyMzM5NjB9.VfGdASubR9qQ7UQ4MQVbyHCaQvu1wzC7upetvklnAFE
 
 settings:
   encodeUrl: true

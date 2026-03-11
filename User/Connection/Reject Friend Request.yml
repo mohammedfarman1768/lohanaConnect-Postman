@@ -1,0 +1,17 @@
+info:
+  name: Reject Friend Request
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: http://localhost:5000/api/v1/user/connections/friend-request/69ae5e3c87a1f845828ba550/reject
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFhNWQxNjVlOTdkMmI4MjBhNTJjYzIiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoibWVyYWJhY2hhMjU0QGdtYWlsLmNvbSIsImlzRW1haWxWZXJpZmllZCI6dHJ1ZSwiaXNQaG9uZVZlcmlmaWVkIjp0cnVlLCJpYXQiOjE3NzMxNDExMDQsImV4cCI6MTc3MzE0MjAwNH0.JjY7VC-OoxTYG8g8PORPdkhb54vmsvFll3WrEjlbsJ0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

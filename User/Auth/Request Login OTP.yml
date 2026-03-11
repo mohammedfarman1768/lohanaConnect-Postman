@@ -1,18 +1,18 @@
 info:
-  name: Login
+  name: Request Login OTP
   type: http
-  seq: 4
+  seq: 17
 
 http:
   method: POST
-  url: http://localhost:5000/api/v1/user/auth/login
+  url: http://localhost:5000/api/v1/user/auth/login/otp/request
   body:
     type: json
     data: |-
       {
-        "identifier": "000001",
-        "password": "Farman12@"
+       "identifier":"rtsfarman2026@gmail.com"
       }
+  auth: inherit
 
 settings:
   encodeUrl: true

@@ -1,0 +1,23 @@
+info:
+  name: Verify Login OTP
+  type: http
+  seq: 18
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/user/auth/login/otp/verify
+  body:
+    type: json
+    data: |-
+      {
+        "identifier": "rtsfarman2026@gmail.com",
+        "otp": "326864"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -9,37 +9,82 @@ http:
   body:
     type: multipart-form
     data:
-      - name: profileImage
-        type: file
-        value:
-          - C:\Users\farma\Downloads\download.jpeg
       - name: dob
         type: text
         value: 1998-05-15
-      - name: country
-        type: text
-        value: India
-      - name: state
-        type: text
-        value: Delhi
-      - name: city
-        type: text
-        value: New Delhi
-      - name: zipcode
-        type: text
-        value: "110001"
       - name: gender
         type: text
         value: MALE
       - name: bloodGroup
         type: text
         value: B+
+      - name: country
+        type: text
+        value: India
+      - name: city
+        type: text
+        value: New Delhi
+      - name: state
+        type: text
+        value: Delhi
+      - name: zipcode
+        type: text
+        value: "110011"
       - name: socialLinks
         type: text
-        value: '{"facebook": "fb.com/user", "linkedin": "li.com/user"}'
+        value: '{\"facebook\":\"fb.com/user\",\"instagram\":\"instagram.com/user\"}'
+      - name: profileVisibility
+        type: text
+        value: '{\"dob\":false,\"gender\":true,\"bloodGroup\":true,\"country\":true,\"city\":true,\"zipcode\":true,\"educationalQualification\":true}'
+      - name: fatherName
+        type: text
+        value: Ramesh Doe
+      - name: fatherProfession
+        type: text
+        value: Business
+      - name: motherName
+        type: text
+        value: Sunita Doe
+      - name: motherProfession
+        type: text
+        value: Homemaker
+      - name: maternalGrandfatherName
+        type: text
+        value: Mohan Lal
+      - name: maternalGrandmotherName
+        type: text
+        value: Mohan Lal
+      - name: paternalGrandfatherName
+        type: text
+        value: Mohan Lal
+      - name: paternalGrandmotherName
+        type: text
+        value: Mohan Lal
+      - name: motherMaidenName
+        type: text
+        value: Mohan Lal
+      - name: gotra
+        type: text
+        value: Mohan Lal
+      - name: nativePlace
+        type: text
+        value: Mohan Lal
+      - name: maritalStatus
+        type: text
+        value: Married
+      - name: spouseName
+        type: text
+        value: Mohan Lal
+      - name: createMatrimonyProfile
+        type: text
+        value: "false"
+      - name: profileImage
+        type: file
+        value:
+          - C:\Users\farma\Downloads\download.jpeg
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDM3NTAyLCJleHAiOjE3NzMwMzg0MDJ9.auTY9PxbhtLvtXGOJJOciOH_jdtaQS-egNYHSJmZcNw
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMjMyNTk4LCJleHAiOjE3NzMyMzM0OTh9.uauTi0CizBTQ58gCUeMsIFyu7Hpqou2IlC9a2miUdNc
 
 settings:
   encodeUrl: true

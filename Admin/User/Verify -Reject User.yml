@@ -8,20 +8,17 @@ http:
   url: http://localhost:5000/api/v1/admin/users/:id/verify
   params:
     - name: id
-      value: 69a9aace725387850085adb5
+      value: 69ae5e3c87a1f845828ba550
       type: path
   body:
     type: json
-    data: "{\r
-
-      \  \"verificationStatus\": \"REJECTED\",\r
-
-      \  \"rejectionReason\": \"Documents are expired.\"\r
-
-      }"
+    data: |-
+      {
+        "verificationStatus": "VERIFIED"
+      }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWE5YTU3OTMxZjA2MDRhN2RlMWI5ZDEiLCJyb2xlIjoiU1VQRVItQURNSU4iLCJpYXQiOjE3NzI3MjczNzcsImV4cCI6MTc3MjcyODI3N30.Qpy6qOt9tPqY8i7xDBdoA-GuaEXxI6ulSm7LryOVz08
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWE5YTU3OTMxZjA2MDRhN2RlMWI5ZDEiLCJyb2xlIjoiU1VQRVItQURNSU4iLCJpc0FjdGl2ZSI6dHJ1ZSwiaXNEZWxldGVkIjpmYWxzZSwiZW1haWwiOiJmYXJtYW5raGFuMTc2OEBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMjI5ODg3LCJleHAiOjE3NzMyMzA3ODd9.BaBeb0D8ehe5oKtjZpo-hFOiO2JS4mBGfU6uMtQExDs
 
 settings:
   encodeUrl: true

@@ -10,11 +10,12 @@ http:
     type: json
     data: |-
       {
-        "firstName": "Farman",
-        "lastName": "Kf",
         "email": "rtsfarman2026@gmail.com",
-        "phone": "+918306529039",
-        "password": "Farman12@"
+        "phone": "+919876543210",
+        "firstName": "John",
+        "middleName": "K",
+        "lastName": "Doe",
+        "password": "Test@1234"
       }
   auth: inherit
 

@@ -1,0 +1,17 @@
+info:
+  name: Get Followers
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: http://localhost:5000/api/v1/user/connections/69aa5d165e97d2b820a52cc2/followers
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMTQxOTg5LCJleHAiOjE3NzMxNDI4ODl9.cxW9kDrMdIxR_WCvBjW_F5t4kBxN6HBa3biHdpLqv-c
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
