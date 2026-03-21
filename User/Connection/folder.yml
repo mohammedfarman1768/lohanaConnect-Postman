@@ -1,8 +1,0 @@
-info:
-  name: Connection
-  type: folder
-  seq: 1
-
-request:
-  auth:
-    type: bearer

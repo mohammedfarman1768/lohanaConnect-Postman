@@ -5,14 +5,14 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5000/api/v1/user/user/onboarding/step-2
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/user/onboarding/step-2
   body:
     type: json
     data: |-
       {
         "highestQualification": "Postgraduate",
         "lastInstitutionName": "IIT Delhi",
-        "yearOfGraduation": 2020,
+        "yearOfGraduation": 2120,
         "courseAndSpecialization": "Computer Science",
         "occupationType": "Business",
         "organizationName": "Lohana Pvt Ltd",
@@ -25,7 +25,7 @@ http:
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMjMzMDYwLCJleHAiOjE3NzMyMzM5NjB9.VfGdASubR9qQ7UQ4MQVbyHCaQvu1wzC7upetvklnAFE
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWJhNWFkOWM1ZTA4ZWQ4ODdhMjRlMzQiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoiZmFybWFua2hhbjE3NjhAZ21haWwuY29tIiwiaXNFbWFpbFZlcmlmaWVkIjp0cnVlLCJpc1Bob25lVmVyaWZpZWQiOnRydWUsImlhdCI6MTc3NDAxNTE2MSwiZXhwIjoxNzc0MDE2MDYxfQ.pftXc6b44wmKTX1RwqI7siIKaMSTBkNNDG225Mr-Nek
 
 settings:
   encodeUrl: true

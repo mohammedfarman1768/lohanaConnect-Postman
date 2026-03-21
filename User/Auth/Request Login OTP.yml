@@ -1,16 +1,16 @@
 info:
   name: Request Login OTP
   type: http
-  seq: 17
+  seq: 6
 
 http:
   method: POST
-  url: http://localhost:5000/api/v1/user/auth/login/otp/request
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/auth/login/otp/request
   body:
     type: json
     data: |-
       {
-       "identifier":"rtsfarman2026@gmail.com"
+       "identifier":"+919166591228"
       }
   auth: inherit
 

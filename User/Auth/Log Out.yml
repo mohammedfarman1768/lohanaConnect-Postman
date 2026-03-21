@@ -1,14 +1,14 @@
 info:
   name: Log Out
   type: http
-  seq: 6
+  seq: 9
 
 http:
   method: POST
-  url: http://localhost:5000/api/v1/user/auth/logout
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/auth/logout
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDM1NzczLCJleHAiOjE3NzMwMzY2NzN9.MjMjqKtUX1GgMNzoVUvKUJUXo88hXWkHQr5gqiVHts8
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWI3OGZiZWU5YjQ0NWM4YTMxZjg2NjYiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczNjM3NzM5LCJleHAiOjE3NzM2Mzg2Mzl9.wdZgtwdIzgJ91CRzknyKcMrb2YNV3PjDq_v_UA2uRik
 
 settings:
   encodeUrl: true

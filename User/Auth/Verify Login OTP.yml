@@ -1,20 +1,18 @@
 info:
   name: Verify Login OTP
   type: http
-  seq: 18
+  seq: 7
 
 http:
   method: POST
-  url: http://localhost:5000/api/v1/user/auth/login/otp/verify
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/auth/login/otp/verify
   body:
     type: json
     data: |-
       {
-        "identifier": "rtsfarman2026@gmail.com",
-        "otp": "326864"
+        "identifier": "+918306529039",
+        "otp": "042008"
       }
-  auth:
-    type: bearer
 
 settings:
   encodeUrl: true

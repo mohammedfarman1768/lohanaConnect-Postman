@@ -1,0 +1,22 @@
+info:
+  name: Send OTP to Phone And Email For Registration
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/auth/pre-verify/request
+  body:
+    type: json
+    data: |
+      {
+        "type": "EMAIL",
+        "email": "farmankhan1768@gmail.com"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

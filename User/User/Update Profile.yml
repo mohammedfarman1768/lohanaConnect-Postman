@@ -4,26 +4,17 @@ info:
   seq: 4
 
 http:
-  method: PUT
-  url: http://localhost:5000/api/v1/user/user/profile
+  method: PATCH
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/user/profile
   body:
     type: json
-    data: "{\r
-
-      \  \"socialLinks\": {\r
-
-      \    \"linkedin\": \"https://linkedin.com/in/updated-profile\",\r
-
-      \    \"twitter\": \"https://linkedin.com/in/updated-profile\"\r
-
-      \  },\r
-
-      \  \"networkingOpportunities\": [\"Job Referrals\", \"Public Speaking\"]\r
-
-      }"
+    data: |-
+      {
+      "city": "Toonk"
+      }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMDM3NzE0LCJleHAiOjE3NzMwMzg2MTR9.ilS1PzG6SN1Izg3ycqK8NyBMOxHnuJNYjDWt3XH_GGM
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWJhNWFkOWM1ZTA4ZWQ4ODdhMjRlMzQiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoiZmFybWFua2hhbjE3NjhAZ21haWwuY29tIiwiaXNFbWFpbFZlcmlmaWVkIjp0cnVlLCJpc1Bob25lVmVyaWZpZWQiOnRydWUsImlhdCI6MTc3NDAxNTE2MSwiZXhwIjoxNzc0MDE2MDYxfQ.pftXc6b44wmKTX1RwqI7siIKaMSTBkNNDG225Mr-Nek
 
 settings:
   encodeUrl: true

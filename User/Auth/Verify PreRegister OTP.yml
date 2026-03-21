@@ -1,0 +1,23 @@
+info:
+  name: Verify PreRegister OTP
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/auth/pre-verify/verify
+  body:
+    type: json
+    data: |-
+      {
+        "identifier": "+91836529039",
+        "type": "PHONE",
+        "otp": "707383"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -5,13 +5,13 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5000/api/v1/user/auth/resend-otp
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/auth/pre-verify/resend
   body:
     type: json
-    data: |-
+    data: |
       {
-        "userId": "69ae5e3c87a1f845828ba550", 
-        "type": "EMAIL"
+        "identifier": "+918306529039",
+        "type": "PHONE"
       }
   auth: inherit
 

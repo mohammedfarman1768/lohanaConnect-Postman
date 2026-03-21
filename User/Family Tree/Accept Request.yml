@@ -1,0 +1,27 @@
+info:
+  name: Accept Request
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/family/request/:requestId
+  params:
+    - name: requestId
+      value: 69be8a5fafbb48dbe1ea6a7a
+      type: path
+  body:
+    type: json
+    data: |
+      {
+        "action": "ACCEPT"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWJhNWFkOWM1ZTA4ZWQ4ODdhMjRlMzQiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoiZmFybWFua2hhbjE2OEBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzc0MDk1MjMwLCJleHAiOjE3NzQwOTYxMzB9.N96Au0Vo8SJqSccz7DOp_g00GaYY6InzHkjjU-Kl6jA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

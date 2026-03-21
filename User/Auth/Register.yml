@@ -1,21 +1,23 @@
 info:
   name: Register
   type: http
-  seq: 1
+  seq: 4
 
 http:
-  method: POST
-  url: http://localhost:5000/api/v1/user/auth/register
+  method: PATCH
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/auth/register
   body:
     type: json
     data: |-
       {
-        "email": "rtsfarman2026@gmail.com",
-        "phone": "+919876543210",
+        "email": "farmankhan1768@gmail.com",
+        "phone": "+918306529039",
         "firstName": "John",
-        "middleName": "K",
+        "middleName": "Kumar",
         "lastName": "Doe",
-        "password": "Test@1234"
+        "password": "Altf@123",
+        "birthCity": "Mumbai",
+        "whatsappNo": "+911234567890"
       }
   auth: inherit
 

@@ -5,13 +5,13 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5000/api/v1/user/user/onboarding/step-1
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/user/onboarding/step-1
   body:
     type: multipart-form
     data:
       - name: dob
         type: text
-        value: 1998-05-15
+        value: 1998-05-1
       - name: gender
         type: text
         value: MALE
@@ -84,7 +84,7 @@ http:
           - C:\Users\farma\Downloads\download.jpeg
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczMjMyNTk4LCJleHAiOjE3NzMyMzM0OTh9.uauTi0CizBTQ58gCUeMsIFyu7Hpqou2IlC9a2miUdNc
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWJhNWFkOWM1ZTA4ZWQ4ODdhMjRlMzQiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoiZmFybWFua2hhbjE3NjhAZ21haWwuY29tIiwiaXNFbWFpbFZlcmlmaWVkIjp0cnVlLCJpc1Bob25lVmVyaWZpZWQiOnRydWUsImlhdCI6MTc3NDAxNTE2MSwiZXhwIjoxNzc0MDE2MDYxfQ.pftXc6b44wmKTX1RwqI7siIKaMSTBkNNDG225Mr-Nek
 
 settings:
   encodeUrl: true

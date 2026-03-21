@@ -1,0 +1,19 @@
+info:
+  name: Delete Request
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/family/request/:requestId
+  params:
+    - name: requestId
+      value: ""
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

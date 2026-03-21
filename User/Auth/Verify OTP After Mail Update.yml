@@ -1,20 +1,20 @@
 info:
   name: Verify OTP After Mail Update
   type: http
-  seq: 15
+  seq: 18
 
 http:
   method: POST
-  url: http://localhost:5000/api/v1/user/auth/email/verify
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/auth/email/verify
   body:
     type: json
     data: |-
       {
-          "otp" : "466312"
+          "otp" : "617641"
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFlNWUzYzg3YTFmODQ1ODI4YmE1NTAiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFyYTIwMjZAZ21haWwuY29tIiwiaXNFbWFpbFZlcmlmaWVkIjp0cnVlLCJpc1Bob25lVmVyaWZpZWQiOnRydWUsImlhdCI6MTc3MzAzNjk0MywiZXhwIjoxNzczMDM3ODQzfQ.p-1owMDaEtyHtQe_9AZ7Iq2s3FfQayh7PmGtZMCnl-E
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWI3OGZiZWU5YjQ0NWM4YTMxZjg2NjYiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoicnRzZmFybWFuMjAyNkBnbWFpbC5jb20iLCJpc0VtYWlsVmVyaWZpZWQiOnRydWUsImlzUGhvbmVWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzczNjM3OTI1LCJleHAiOjE3NzM2Mzg4MjV9.H9pT_GvELEJpfT-HOfGa__yUTza4jNoXK_cdx__qCTY
 
 settings:
   encodeUrl: true

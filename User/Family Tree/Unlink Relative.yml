@@ -1,0 +1,24 @@
+info:
+  name: Unlink Relative
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: https://lohana-connect-backend-895924407291.us-central1.run.app/api/v1/user/family/unlink
+  body:
+    type: json
+    data: |
+      {
+        "targetUserId": "69ba5ad9c5e08ed887a24e34", 
+        "relationshipType": "FATHER"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWJlODgxYWFmYmI0OGRiZTFlYTZhNWEiLCJyb2xlIjoiTUVNQkVSIiwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImVtYWlsIjoiZmFybWFua2hhbjE3NjhAZ21haWwuY29tIiwiaXNFbWFpbFZlcmlmaWVkIjp0cnVlLCJpc1Bob25lVmVyaWZpZWQiOnRydWUsImlhdCI6MTc3NDA5NDQ4OCwiZXhwIjoxNzc0MDk1Mzg4fQ.my2hpyIPLZYcc_LkB6Ose0TrP8VigGVZvqQJiBJFXWE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
